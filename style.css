@@ -1,0 +1,143 @@
+/*
+Theme Name: Ghostwriter
+Theme URI: http://www.brunocavalcante.com.br/blog/2011/01/tema-wordpress-ghostwriter/
+Description: A minimal theme focused on typography.
+Version: 1.4
+Author: Bruno Cavalcante
+Author URI: http://www.brunocavalcante.com.br
+Tags: two-columns, fixed-width, right-sidebar, threaded-comments, microformats
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Gentium Basic License: SIL Open Font License
+Gentium Basic License URI: http://scripts.sil.org/OFL
+*/
+
+/* Font-face */
+@font-face {
+    font-family: "Gentium Basic";
+    src: local("Gentium Basic"), url("font/gentium.ttf");
+}
+@font-face {
+    font-family: "Gentium Basic";
+    font-style: italic;
+    src: local("Gentium Basic Italic"), url("./font/gentium-italic.ttf");
+}
+@font-face {
+    font-family: "Gentium Basic";
+    font-weight: bold;
+    src: local("Gentium Basic Bold"), url("./font/gentium-bold.ttf");
+}
+@font-face {
+    font-family: "Gentium Basic";
+    font-style: italic;
+    font-weight: bold;
+    src: local("Gentium Basic Bold Italic"), url("./font/gentium-bold-italic.ttf");
+}
+
+/* Float Fix */
+#content:after, #header:after, #pagination ul:after, #nav ul:after, .entry-content:after, #footer:after, .entry-content p:after 
+{content:".";clear:both;display:block;overflow:hidden;visibility:hidden;height:0}
+
+/* HTML5 elements */
+article, aside, dialog, figure, figcaption, footer, header, hgroup, nav, section, small {display: block}
+
+/* Basic */
+body {color: #333; font: 1em/1.5em "Gentium Basic", Garamond, Palatino, Georgia, serif; background: url("images/bg-body.png") repeat-x 0 0 #F4F3EB; margin: 0}
+h1, h2, h3, h4, h5, h6 {letter-spacing: -1px; font-weight: normal; color: black; text-shadow: 1px 1px white}
+h1, h2, h3 {font-style: italic}
+h1 {font-size: 2.5em}
+h2 {font-size: 2em;line-height: 1.1em; text-align: center; margin: 0}
+h3 {font-size: 1.75em}
+img {border: 5px solid white}
+img.wp-smiley {border: none}
+p, .published {margin: 0.75em 0}
+a {color: #2A5785; text-decoration: underline}
+a:hover {text-decoration: none}
+
+/* Structure */
+#header, #content, #footer {width: 960px; margin: 0 auto}
+#page {float: left; width: 640px}
+#sidebar {float: right; width: 260px}
+.category-title, .tag-title, .search-title, .archive-title {margin-bottom: 1em}
+
+/* Header */
+#header {border-bottom: 1px solid #DFDFDF; margin-bottom: 2em; padding: 2em 0}
+#header h1 {font-style: italic; font-weight: bold;letter-spacing: 0.05em; margin: 0; float: left;line-height: normal}
+#site-description {display: block; float: left; color: #555; clear: both; font-style: italic; text-shadow: 1px 1px white; line-height: normal}
+#nav {float: right; margin-top: 1em}
+#nav ul {list-style-type: none; margin: 0; padding: 0}
+#nav li {float: left; margin-left: 1.5em; line-height: 1em}
+#nav li a {text-transform: uppercase; letter-spacing: 0.2em; text-decoration: none}
+#nav li a:hover {text-decoration: underline}
+#nav .rss {border-left: 1px solid #2A5785; padding-left: 1.5em}
+#nav .rss a {display: block; background: url(images/icon_rss.png) no-repeat 100% 50%; padding-right: 22px}
+
+/* Sidebar */
+#sidebar ul {list-style-type: none; padding: 0; margin: 0}
+#sidebar h2 {text-align: left; font-size: 1.75em; margin-bottom: 0.4em}
+#sidebar ul li ul {margin: 0.75em 0 0.75em 1em; list-style-type: circle}
+#sidebar ul li ul.children {margin: 0 0 0 1em}
+#sidebar .widget {margin-bottom: 2em}
+.widget_search form {margin: 0.75em 0}
+.widget_search #s {display: block; padding: 0.25em 0.5em}
+.widget_search #searchsubmit {margin: 0.5em 0 0; padding: 0.5em 1em}
+#sidebar img {height: auto; width: auto; max-width: 230px}
+
+/* Footer */
+#footer {clear: both;color: #777;font-size: 1em;font-style: italic;padding: 1em 0; border-top: 1px solid #DFDFDF; zoom: 1}
+#site-info {float: left}
+#site-generator {float: right}
+
+/* Content */
+h1 a, h2 a {text-decoration: none}
+h1 a:hover, h2 a:hover {text-decoration: underline}
+article {margin-bottom: 2em}
+#pagination {margin: 0.75em 0 2em}
+#pagination ul {list-style-type: none; margin: 0; padding: 0}
+#pagination li {display: inline; float: left}
+#pagination .next {float: right}
+.postExtras {margin: 1em 0}
+
+/* Post */
+.published {color: #595959;display: block;font-size: 1em;letter-spacing: 0.3em;text-align: center;text-transform: uppercase}
+.published a {color: #595959; text-decoration: none}
+.published a:hover {text-decoration: underline}
+.entry-content {zoom: 1}
+.entry-content h1, .entry-content h2, .entry-content h3, 
+.entry-content h4, .entry-content h5, .entry-content h6 {font-style: normal; font-weight: normal; margin: 0.75em 0}
+.entry-content h1 {font-size: 1.75em}
+.entry-content h2 {font-size: 1.5em; text-align: left}
+.entry-content h3 {font-size: 1.25em}
+.entry-content h4 {font-size: 1.10em}
+.entry-content h5 {font-size: 1em}
+.entry-content h6 {font-size: 0.9em}
+.entry-content p, .entry-summary p {text-align: justify; zoom: 1}
+.entry-content pre, .entry-content code {overflow-y: auto}
+.entry-content img {height: auto; width: auto; max-width: 640px}
+.entry-content img.aligncenter {clear: both;display: block;margin-left: auto;margin-right: auto}
+.wp-caption {background: white}
+.wp-caption img {margin-bottom: 0}
+.wp-caption, .gallery-caption {color: #555; font-size: 0.8em; line-height: 1.25em}
+.wp-caption .wp-caption-text {margin-top: 0; background: white; padding: 0 5px 5px}
+.alignleft, .alignright {margin-bottom: 1em}
+.alignleft {float: left; display: inline; margin-right: 1.5em}
+.alignright {float: right; display: inline; margin-left: 1.5em}
+.aligncenter {clear: both; display: block; margin-left: auto; margin-right: auto}
+.entry-content .attachment {text-align: center}
+
+/* Comments */
+.commentlist, .commentlist ul {list-style-type: none}
+.commentlist {margin: 1em 0; padding: 0}
+.commentlist .children {margin-left: 0; padding-left: 0}
+.commentlist .comment {position: relative;padding-left: 72px;margin: 2em 0}
+.commentlist .commentleft {left: 0;top: 0;position: absolute;float:left}
+.comment {zoom: 1}
+.comment .commentmeta {border-bottom: 1px solid #DFDFDF;padding-bottom: 0.25em;font-style: italic}
+.comment .commentmeta small {display: inline}
+.comment .commentauthor {font-weight: bold}
+.comment .commentcontent {margin: 0.75em 0}
+.comment-form-author input, .comment-form-email input, .comment-form-url input, .comment-form-comment textarea {display: block;padding: 0.25em 0.5em}
+.form-submit input {padding: 0.5em 1em}
+
+/* Basic Widgets */
+#wp-calendar {width: 100%}
